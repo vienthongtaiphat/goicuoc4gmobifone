@@ -1,0 +1,100 @@
+.about-wrapper {
+	padding: 50px 0;
+
+	.entry-title {
+		font-weight: 400;
+		font-size: 40px;
+		line-height: 48px;
+		color: #000000;
+		text-align: center;
+		margin-bottom: 50px;
+		@include responsive(991) {
+			font-size: 30px;
+			line-height: 1.4;
+		}
+	}
+
+	.entry-content {
+		img {
+			margin-bottom: 50px;
+		}
+	}
+
+	.banners-wrapper {
+		.banner-item {
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 15px;
+			text-align: center;
+			overflow: hidden;
+			padding: 35px 10px;
+			@include responsive(767) {
+				margin-bottom: 30px;
+			}
+
+			&:hover {
+				.banner-title, a {
+					@include transform(translateY(0));
+				}
+
+				.banner-title {
+					padding-right: 0;
+
+					&:before {
+						opacity: 0;
+					}
+				}
+			}
+
+			.banner-title {
+				font-weight: 700;
+				font-size: 23px;
+				line-height: 28px;
+				text-transform: uppercase;
+				color: #FFFFFF;
+				margin-bottom: 18px;
+				position: relative;
+				display: inline-block;
+				padding-right: 45px;
+				@include transform(translateY(35px));
+				@include transition(.3s all);
+				@include responsive(767) {
+					font-size: 20px;
+					line-height: 1.4;
+				}
+
+				&:before {
+					content: '';
+					position: absolute;
+					top: -4px;
+					right: 0;
+					width: 33px;
+					height: 33px;
+					background-image: url("../images/arrow-2.png");
+					background-size: cover;
+					background-repeat: no-repeat;
+					@include transition(.3s all);
+				}
+			}
+
+			a {
+				display: inline-block;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 22px;
+				color: #FFFFFF;
+				padding: 12px 16px;
+				border: 1px solid #FFFFFF;
+				border-radius: 8px;
+				min-width: 289px;
+				@include transform(translateY(100px));
+				@include transition(.3s all);
+
+				&:hover {
+					background-color: #fff;
+					color: #028933;
+				}
+			}
+		}
+	}
+}

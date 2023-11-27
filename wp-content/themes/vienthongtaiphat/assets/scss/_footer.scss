@@ -1,0 +1,133 @@
+.footer {
+	background-color: #004018;
+	padding: 10px 0;
+
+	.footer-widgets {
+		.footer-widget {
+			padding-top: 30px;
+
+			&.footer-widget-1 {
+				padding-top: 0;
+			}
+
+			@include responsive(991) {
+				margin-bottom: 10px;
+				padding-top: 0;
+			}
+			@include responsive(767) {
+				margin-bottom: 5px;
+			}
+
+			.widget-title {
+				font-weight: 700;
+				font-size: 24px;
+				color: #FDB813;
+				margin-bottom: 12px;
+				line-height: 1.2;
+				@include responsive(767) {
+					font-size: 10px;
+					margin-bottom: 5px;
+				}
+			}
+
+			.logo {
+				@include responsive(767) {
+					@include flexbox();
+					@include align-items(center);
+					margin-bottom: 5px;
+				}
+
+				img {
+					max-height: 120px;
+					max-width: 100%;
+					width: auto;
+					height: auto;
+					@include responsive(767) {
+						max-height: 38px;
+					}
+				}
+
+				.desc {
+					p {
+						font-size: 18px;
+						color: #FFFFFF;
+						margin-bottom: 8px;
+						margin-top: 8px;
+						@include responsive(767) {
+							margin-top: 0;
+							margin-bottom: 0;
+							padding-left: 11px;
+							font-size: 12px;
+							line-height: 1.2;
+						}
+
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+
+			.social {
+				@include flexbox();
+				@include flex-wrap(wrap);
+				@include align-items(center);
+
+				a {
+					@include flexbox();
+					@include align-items(center);
+					@include justify-content(center);
+					width: 60px;
+					height: 60px;
+					background: linear-gradient(180deg, #22A46F 6.45%, #59B349 100%);
+					border-radius: 60px;
+					margin: 0 9px;
+					@include transition(.3s all);
+					@include responsive(767) {
+						width: 35px;
+						height: 35px;
+					}
+
+					&:hover {
+						@include transform(translateY(-7px));
+					}
+
+					&:first-child {
+						margin-left: 0;
+					}
+
+					&:last-child {
+						margin-right: 0;
+					}
+
+					img {
+						max-width: 49px;
+						max-height: 49px;
+						width: auto;
+						height: auto;
+						@include responsive(767) {
+							max-width: 15px;
+							max-height: 15px;
+						}
+					}
+				}
+			}
+
+			p {
+				margin-bottom: 12px;
+				font-size: 18px;
+				color: #FFFFFF;
+				line-height: 1.2;
+				@include responsive(767) {
+					margin-bottom: 5px;
+					font-size: 10px;
+					line-height: 1.2;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+.content-wrapper {
+	padding-top: 10px;
+
+	.user-manual-wrapper {
+		background-position: left top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		padding-bottom: 60px;
+		padding-top: 10px;
+		@include responsive(767) {
+			background-image: unset !important;
+			padding-bottom: 0;
+		}
+	}
+
+	.entry-content {
+		.desc {
+			text-align: center;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			color: #7A7A7A;
+			max-width: 532px;
+			margin: 0 0 10px auto;
+			@include responsive(991) {
+				margin: 0 auto 20px auto;
+			}
+			@include responsive(767) {
+				font-size: 14px;
+				line-height: 1.5;
+				margin: 0 auto 10px auto;
+			}
+
+			p {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.user-manual {
+			background: rgba(255, 224, 187, 0.84);
+			border: 1px dashed #CF9550;
+			border-radius: 29px;
+			padding: 10px 30px;
+			font-weight: 400;
+			font-size: 22px;
+			line-height: 26px;
+			color: #313331;
+			@include responsive(767) {
+				border-radius: 10px;
+				border: 1px dashed #CF9550;
+				background: rgba(255, 224, 187, 0.84);
+				padding: 16px 10px;
+			}
+
+			p {
+				margin-bottom: 5px;
+				@include responsive(767) {
+					font-size: 14px;
+					margin-bottom: 0;
+					line-height: 1.5;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.title {
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 26px;
+				text-align: center;
+				color: #313331;
+				margin-bottom: 10px;
+				@include responsive(767) {
+					font-size: 16px;
+					line-height: 1.5;
+					margin-bottom: 12px;
+				}
+
+				span {
+					font-weight: 700;
+					font-size: 30px;
+					line-height: 36px;
+					color: #046F3A;
+					@include responsive(767) {
+						font-size: 18px;
+						line-height: 1.5;
+					}
+				}
+			}
+
+			.subtitle {
+				font-weight: 400;
+				font-size: 22px;
+				line-height: 26px;
+				color: #7A7A7A;
+				margin-top: 0;
+				margin-bottom: 15px;
+				@include responsive(767) {
+					font-size: 14px;
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+}

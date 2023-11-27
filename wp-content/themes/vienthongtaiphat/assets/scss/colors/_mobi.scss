@@ -1,0 +1,73 @@
+body {
+	.navigation {
+		ul.navigation-menu {
+			> li {
+				> a {
+					color: #046F3A;
+				}
+
+				&:before {
+					color: #046F3A;
+				}
+
+				&:after {
+					background-color: #046F3A;
+				}
+			}
+		}
+	}
+
+	.advanced-search-wrapper, .sidebar-widget {
+		.advanced-search-form {
+			.search-checkbox-wrapper {
+				.checkbox-wrapper {
+					.checkbox-container {
+						input:checked ~ .checkmark {
+							background-color: #046F3A;
+							border-color: #046F3A;
+						}
+					}
+				}
+			}
+
+			.submit-wrapper {
+				button[type=submit] {
+					background-color: #046F3A;
+				}
+			}
+		}
+	}
+
+	.section-title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 34px;
+		text-transform: uppercase;
+		color: #046F3A;
+		position: relative;
+		margin-bottom: 20px;
+		@include responsive(991) {
+			font-size: 22px;
+			line-height: 28px;
+		}
+		@include responsive(767) {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 8px;
+		}
+
+		&:after {
+			content: '';
+			width: 145px;
+			height: 3px;
+			display: block;
+			background: #046F3A;
+			border-radius: 5px;
+			margin: 10px auto 0 auto;
+			@include responsive(767) {
+				margin: 0 auto 0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.fb-wrapper {
+	padding: 30px 0;
+
+	.fb-page-wrapper {
+		@include responsive(991) {
+			margin-bottom: 30px;
+		}
+	}
+}

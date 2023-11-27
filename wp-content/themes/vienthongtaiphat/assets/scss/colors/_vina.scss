@@ -1,0 +1,91 @@
+body.page-template-vina {
+	.navigation {
+		ul.navigation-menu {
+			> li {
+				> a {
+					color: $vina-color;
+				}
+
+				&:before {
+					color: $vina-color;
+				}
+
+				&:after {
+					background-color: $vina-color;
+				}
+			}
+		}
+	}
+
+	.advanced-search-form {
+		.search-checkbox-wrapper {
+			.checkbox-wrapper {
+				.checkbox-container {
+					input:checked ~ .checkmark {
+						background-color: $vina-color;
+						border-color: $vina-color;
+					}
+				}
+			}
+		}
+
+		.submit-wrapper {
+			button[type=submit] {
+				background-color: $vina-color;
+			}
+		}
+	}
+
+	.section-title {
+		color: $vina-color;
+
+		&:after {
+			background: $vina-color;
+		}
+	}
+
+	.package-wrapper {
+		padding-top: 20px;
+
+		.package-more {
+			.more-btn {
+				color: $vina-color;
+			}
+		}
+	}
+
+	.package-item {
+		.package-header {
+			background: rgba(0, 96, 176, 0.16);
+
+			.package-name {
+				color: $vina-color;
+			}
+		}
+
+		.package-footer {
+			a {
+				border: 1px solid $vina-color;
+
+				&.package-btn-solid {
+					color: #fff;
+					background: $vina-color;
+
+					&:hover {
+						color: $vina-color;
+						background: #fff;
+					}
+				}
+
+				&.package-btn-outline {
+					color: $vina-color;
+
+					&:hover {
+						color: #fff;
+						background: $vina-color;
+					}
+				}
+			}
+		}
+	}
+}

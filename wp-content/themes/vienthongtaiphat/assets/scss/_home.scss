@@ -1,0 +1,79 @@
+#contentTab {
+	@include justify-content(center);
+	border: 0;
+	padding: 28px 0;
+
+	li {
+		margin: 0 7px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@include responsive(767) {
+			margin: 0 3px;
+		}
+
+		&.mobi {
+			button {
+				&.active {
+					border-color: $mobi-color;
+					background: rgba(0, 96, 176, 0.16);
+				}
+			}
+		}
+
+		&.viettel {
+			button {
+				&.active {
+					border-color: $viettel-color;
+					background: rgba(239, 0, 50, 0.16);
+				}
+			}
+		}
+
+		&.vina {
+			button {
+				&.active {
+					border-color: $vina-color;
+					background: rgba(0, 149, 248, 0.16);
+				}
+			}
+		}
+
+		button {
+			margin-bottom: 0;
+			padding: 20px 30px;
+			background: #FFFFFF;
+			border: 2px solid #B8B8B8;
+			border-radius: 16px;
+			text-align: center;
+			@include responsive(991) {
+				padding: 10px 20px;
+				border-radius: 10px;
+			}
+			@include responsive(767) {
+				padding: 5px 10px;
+				border-radius: 7px;
+			}
+
+			img {
+				max-height: 20px;
+				max-width: 100%;
+				width: auto;
+				height: auto;
+				vertical-align: middle;
+				@include responsive(767) {
+					max-height: 15px;
+				}
+				@include responsive(575) {
+					max-height: 10px;
+				}
+			}
+		}
+	}
+}

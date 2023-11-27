@@ -1,0 +1,105 @@
+// Utilities
+// Sass tools and helpers used across the project.
+@import '../scss/utils/variables';
+@import '../scss/utils/mixins';
+
+// Vendors
+// External libraries and frameworks.
+@import '../scss/vendors/normalize';
+@import '../scss/vendors/fonts';
+@import '../scss/vendors/defaults';
+@import '../scss/vendors/jquery-ui';
+
+// Components
+@import '../scss/components/container';
+@import '../scss/components/mmenu';
+@import '../scss/components/package';
+
+// Layouts
+@import '../scss/header';
+@import '../scss/slider';
+@import '../scss/home';
+@import '../scss/hero';
+@import '../scss/advanced-search';
+@import '../scss/content';
+@import '../scss/search';
+@import '../scss/sidebar';
+@import '../scss/single';
+@import '../scss/single-2';
+@import '../scss/about';
+@import '../scss/recruitment';
+@import '../scss/blog';
+@import '../scss/fab';
+@import '../scss/videos';
+@import '../scss/wordpress';
+@import '../scss/loader';
+@import '../scss/search-package';
+@import '../scss/package-recommend';
+@import '../scss/fb';
+@import '../scss/footer';
+@import '../scss/cashback';
+//@import '../scss/mno-menu';
+
+// Colors
+@import '../scss/colors/mobi';
+//@import '../scss/colors/viettel';
+//@import '../scss/colors/vina';
+
+.pagination-wrapper {
+	.n-page-nav-wrapper {
+		@include flexbox();
+		@include flex-wrap(wrap);
+
+		.page-nav-prev, .page-nav-next {
+			min-width: 30px;
+			line-height: 28px;
+			border: 1px solid #046F3A;
+			border-radius: 5px;
+			@include flexbox();
+			@include justify-content(center);
+			@include align-items(center);
+			font-size: 15px;
+			color: #046F3A;
+			@include transition(.3s all);
+			margin: 0 5px;
+
+			&:hover {
+				background-color: rgb(0, 0, 0, .2);
+			}
+		}
+
+		ul {
+			@include flexbox();
+			@include justify-content(flex-end);
+			@include flex-wrap(wrap);
+
+			li {
+				margin: 0 5px;
+
+				&.page-nav-item-current {
+					a {
+						background-color: #046F3A;
+						color: #fff;
+					}
+				}
+
+				a {
+					min-width: 30px;
+					line-height: 28px;
+					border: 1px solid #046F3A;
+					border-radius: 5px;
+					@include flexbox();
+					@include justify-content(center);
+					@include align-items(center);
+					font-size: 15px;
+					color: #046F3A;
+					@include transition(.3s all);
+
+					&:hover {
+						background-color: rgb(0, 0, 0, .2);
+					}
+				}
+			}
+		}
+	}
+}

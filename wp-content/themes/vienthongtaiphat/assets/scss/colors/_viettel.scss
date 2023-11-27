@@ -1,0 +1,63 @@
+body.viettel {
+	.navigation {
+		ul.navigation-menu {
+			> li {
+				> a {
+					color: $viettel-color;
+				}
+
+				&:before {
+					color: $viettel-color;
+				}
+
+				&:after {
+					background-color: $viettel-color;
+				}
+			}
+		}
+	}
+
+	.advanced-search-form {
+		.search-checkbox-wrapper {
+			.checkbox-wrapper {
+				.checkbox-container {
+					input:checked ~ .checkmark {
+						background-color: $viettel-color;
+						border-color: $viettel-color;
+					}
+				}
+			}
+		}
+
+		.submit-wrapper {
+			button[type=submit] {
+				background-color: $viettel-color;
+			}
+		}
+	}
+
+	.section-title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 34px;
+		text-transform: uppercase;
+		color: $viettel-color;
+		position: relative;
+		margin-bottom: 55px;
+		@include responsive(991) {
+			font-size: 22px;
+			line-height: 28px;
+		}
+
+		&:after {
+			content: '';
+			width: 145px;
+			height: 3px;
+			display: block;
+			background: $viettel-color;
+			border-radius: 5px;
+			margin: 16px auto 0 auto;
+		}
+	}
+}

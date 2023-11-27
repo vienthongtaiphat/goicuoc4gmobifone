@@ -1,0 +1,527 @@
+.single-package-wrapper {
+	padding: 65px 0;
+	overflow: hidden;
+
+	.content-wrapper {
+		padding: 30px;
+		background-color: #BBD8CB;
+		border-radius: 20px;
+		color: #131313;
+		@include responsive(767) {
+			border-radius: 15px;
+			padding: 15px;
+		}
+	}
+
+	.featured-image {
+		position: relative;
+		max-width: 526px;
+		max-height: 526px;
+		margin: 0 auto;
+		@include responsive(991) {
+			margin: 0 auto 50px auto;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			max-width: 100%;
+			max-height: 100%;
+			border-radius: 10px;
+		}
+
+		.featured-content {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 30px;
+			@include responsive(424) {
+				padding: 20px;
+			}
+
+			.package-name {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 55px;
+				color: #f8ad1d;
+				margin-bottom: 17px;
+				margin-top: 40px;
+				text-align: center;
+				padding-left: 30%;
+				@include responsive(1179) {
+					font-size: 49px;
+					margin-top: 20px;
+				}
+				@include responsive(991) {
+					font-size: 60px;
+					margin-top: 30px;
+				}
+				@include responsive(767) {
+					font-size: 50px;
+				}
+				@include responsive(600) {
+					font-size: 45px;
+				}
+				@include responsive(425) {
+					font-size: 25px;
+					margin-top: 50px;
+				}
+				@include responsive(424) {
+					font-size: 25px;
+					margin-top: 40px;
+				}
+				@include responsive(320) {
+					font-size: 20px;
+					margin-top: 20px;
+				}
+			}
+		}
+
+		.mobile-screen {
+			position: absolute;
+			bottom: 0;
+			right: 12%;
+			width: 47%;
+			height: 38%;
+			z-index: 10;
+			padding: 7px;
+			text-align: center;
+			@include responsive(424) {
+				height: 42%;
+			}
+
+			.text-2 {
+				text-transform: uppercase;
+				font-weight: 900;
+				font-size: 19px;
+				color: #f32a01;
+				margin-bottom: 25px;
+				line-height: 1;
+				font-family: "Roboto", sans-serif;
+				@include responsive(1179) {
+					font-size: 17px;
+				}
+				@include responsive(991) {
+					font-size: 19px;
+				}
+				@include responsive(767) {
+					font-size: 18px;
+				}
+				@include responsive(600) {
+					font-size: 16px;
+				}
+				@include responsive(600) {
+					font-size: 15px;
+				}
+				@include responsive(425) {
+					margin-bottom: 10px;
+				}
+				@include responsive(424) {
+					font-size: 9px;
+				}
+			}
+
+			.text-3 {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 23px;
+				color: #000;
+				margin-top: 0;
+				margin-bottom: 12px;
+				text-align: center;
+				@include responsive(600) {
+					font-size: 20px;
+				}
+				@include responsive(424) {
+					font-size: 16px;
+					margin-bottom: 0;
+				}
+				@include responsive(320) {
+					font-size: 13px;
+				}
+			}
+
+			.text-4 {
+				text-transform: uppercase;
+				font-weight: 900;
+				font-size: 42px;
+				color: #f32a01;
+				margin-bottom: 0;
+				text-align: center;
+				@include responsive(1179) {
+					font-size: 34px;
+				}
+				@include responsive(991) {
+					font-size: 42px;
+				}
+				@include responsive(767) {
+					font-size: 34px;
+				}
+				@include responsive(600) {
+					font-size: 28px;
+				}
+				@include responsive(424) {
+					font-size: 24px;
+				}
+				@include responsive(320) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	.package-details {
+		.entry-title {
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 60px;
+			color: #313331;
+			margin-bottom: 32px;
+			@include responsive(1199) {
+				font-size: 40px;
+				line-height: 1.4;
+			}
+			@include responsive(991) {
+				font-size: 30px;
+				line-height: 1.4;
+			}
+		}
+
+		ul.info-list {
+			margin-bottom: 36px;
+
+			li {
+				position: relative;
+				padding-left: 40px;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 24px;
+				color: #313331;
+				margin-bottom: 16px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				i {
+					position: absolute;
+					left: 0;
+					top: 2px;
+					font-size: 20px;
+					width: 28px;
+					display: block;
+					text-align: center;
+					color: #FDB813;
+				}
+			}
+		}
+
+		.action-buttons {
+			a {
+				display: block;
+				padding: 12px 16px;
+				border-radius: 8px;
+				text-align: center;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: 700;
+				border: 1px solid #046F3A;
+				margin-bottom: 12px;
+				@include responsive(767) {
+					padding: 8px 5px;
+					border-radius: 6px;
+					font-size: 12px;
+					margin-bottom: 8px;
+				}
+
+				&.action-btn-solid {
+					color: #fff;
+					background: #046F3A;
+
+					&:hover {
+						color: #046F3A;
+						background: #fff;
+					}
+				}
+
+				&.action-btn-outline {
+					color: #046F3A;
+					background: #fff;
+
+					&:hover {
+						color: #fff;
+						background: #046F3A;
+						border-color: #046F3A;
+					}
+				}
+			}
+		}
+	}
+}
+
+.packageModal {
+	@media (min-width: 992px) {
+		.modal-dialog {
+			max-width: 900px;
+		}
+	}
+
+	.register-package-content {
+		margin: 0;
+		font-weight: 700;
+		color: #131313;
+		font-size: 30px;
+		text-align: center;
+
+		span {
+			color: #f32a01;
+		}
+	}
+}
+
+.packageOTPModal {
+	@media (min-width: 992px) {
+		.modal-dialog {
+			max-width: 900px;
+		}
+	}
+
+	.modal-header {
+		background-color: #004018;
+		color: #fff;
+
+		.btn-close {
+			color: #fff;
+			background: unset;
+
+			&:before {
+				content: '\f00d';
+				font-family: "Font Awesome 6 Free";
+				font-weight: 900;
+				color: #fff;
+			}
+		}
+	}
+
+	.btn {
+		background-color: #004018;
+		border-color: #004018;
+		margin: 0 auto;
+		display: block;
+
+		&:hover {
+			background-color: #012c11;
+			border-color: #012c11;
+		}
+	}
+
+	.packages-recommend-wrapper, .message-wrapper {
+		margin-top: 30px;
+
+		.package-recommend-title {
+			text-align: center;
+			font-weight: 700;
+			font-size: 18px;
+			text-transform: uppercase;
+			color: #046F3A;
+			position: relative;
+			margin-bottom: 20px;
+		}
+
+		.message-content {
+			text-align: center;
+		}
+
+		.package-recommend-slick-slider-wrapper {
+			overflow: hidden;
+
+			.slick-slide {
+				margin: 0 12px;
+			}
+
+			.slick-list {
+				margin: 0 -12px;
+			}
+
+			.slick-arrow {
+				position: absolute;
+				top: 35%;
+				z-index: 1;
+				font-size: 0;
+				width: 40px;
+				height: 40px;
+				background-color: #fff;
+				border-radius: 40px;
+				border: 0;
+				box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+
+				&:hover {
+					background-color: #046F3A;
+
+					&:before {
+						color: #fff;
+					}
+				}
+
+				&:before {
+					font-family: "Font Awesome 6 Free";
+					font-weight: 900;
+					font-size: 17px;
+					color: #4f4f4f;
+				}
+
+				&.slick-prev {
+					left: 10px;
+
+					&:before {
+						content: '\f060';
+					}
+				}
+
+				&.slick-next {
+					right: 10px;
+
+					&:before {
+						content: '\f061';
+					}
+				}
+			}
+
+			ul.slick-dots {
+				@include flexbox();
+				@include flex-wrap(wrap);
+				@include justify-content(center);
+				@include align-items(center);
+
+				li {
+					width: 12px;
+					height: 12px;
+					position: relative;
+					padding: 0;
+					margin: 5px;
+
+					button {
+						font-size: 0;
+						border: 1px solid #ccc;
+						background-color: #fff;
+						position: absolute;
+						left: 0;
+						top: 0;
+						padding: 0;
+						margin-top: 0;
+						width: 100%;
+						height: 100%;
+						border-radius: 100%;
+					}
+
+					&.slick-active {
+						button {
+							background-color: #ccc;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.packages-related-wrapper {
+	padding-bottom: 20px;
+
+	.packages-related {
+		.slick-slide {
+			margin: 0 12px;
+		}
+
+		.slick-list {
+			margin: 0 -12px;
+		}
+
+		.slick-arrow {
+			position: absolute;
+			top: 35%;
+			z-index: 1;
+			font-size: 0;
+			width: 40px;
+			height: 40px;
+			background-color: #fff;
+			border-radius: 40px;
+			border: 0;
+			box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+
+			&:hover {
+				background-color: #046F3A;
+
+				&:before {
+					color: #fff;
+				}
+			}
+
+			&:before {
+				font-family: "Font Awesome 6 Free";
+				font-weight: 900;
+				font-size: 17px;
+				color: #4f4f4f;
+			}
+
+			&.slick-prev {
+				left: -20px;
+				@include responsive(767) {
+					left: 10px;
+				}
+
+				&:before {
+					content: '\f060';
+				}
+			}
+
+			&.slick-next {
+				right: -20px;
+				@include responsive(767) {
+					right: 10px;
+				}
+
+				&:before {
+					content: '\f061';
+				}
+			}
+		}
+
+		ul.slick-dots {
+			@include flexbox();
+			@include flex-wrap(wrap);
+			@include justify-content(center);
+			@include align-items(center);
+
+			li {
+				width: 12px;
+				height: 12px;
+				position: relative;
+				padding: 0;
+				margin: 5px;
+
+				button {
+					font-size: 0;
+					border: 1px solid #ccc;
+					background-color: #fff;
+					position: absolute;
+					left: 0;
+					top: 0;
+					padding: 0;
+					margin-top: 0;
+					width: 100%;
+					height: 100%;
+					border-radius: 100%;
+				}
+
+				&.slick-active {
+					button {
+						background-color: #ccc;
+					}
+				}
+			}
+		}
+	}
+}

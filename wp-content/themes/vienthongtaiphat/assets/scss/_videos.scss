@@ -1,0 +1,30 @@
+.videos-wrapper {
+	.video-item {
+		text-align: center;
+		border-radius: 8px;
+		border: 1px solid #E9EBEB;
+		background: #FFF;
+		padding: 24px;
+		@include responsive(767) {
+			padding: 15px;
+		}
+
+		.video-content {
+			iframe {
+				border-radius: 4px;
+			}
+		}
+
+		.video-title {
+			margin-top: 22px;
+			margin-bottom: 0;
+			color: #000;
+			font-size: 26px;
+			font-weight: 700;
+			@include responsive(767) {
+				margin-top: 10px;
+				font-size: 20px;
+			}
+		}
+	}
+}

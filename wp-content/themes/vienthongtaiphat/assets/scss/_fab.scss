@@ -1,0 +1,145 @@
+.zalo-chat-widget {
+	@include responsive(991) {
+		right: 15px !important;
+		bottom: 95px !important;
+	}
+}
+
+.fab-wrapper {
+	position: fixed;
+	z-index: 1000;
+	bottom: 30px;
+	right: 15px;
+	width: 116px;
+	@include responsive(991) {
+		width: 60px;
+	}
+
+	#back-to-top {
+		display: block;
+		width: 100px;
+		height: 100px;
+		background-color: #FFFFFF;
+		border: 1px solid #C4C4C4;
+		box-shadow: 0 4px 44px rgba(120, 120, 120, 0.25);
+		border-radius: 100px;
+		background-image: url("../images/arrow-3.png");
+		background-size: 35px 17px;
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 0 auto;
+		@include responsive(991) {
+			width: 60px;
+			height: 60px;
+			background-size: 25px 10px;
+		}
+	}
+
+	.call {
+		width: 116px;
+		height: 116px;
+		border-radius: 116px;
+		background-image: url("../images/call.png");
+		background-size: 116px;
+		background-repeat: no-repeat;
+		display: block;
+		margin: 0 auto 13px auto;
+		@include responsive(991) {
+			width: 60px;
+			height: 60px;
+			background-size: 60px;
+		}
+	}
+}
+
+.action-call {
+	position: fixed;
+	bottom: 30px;
+	left: 15px;
+	background: #01A0DD;
+	border-radius: 50px;
+	padding-left: 112px;
+	white-space: nowrap;
+	line-height: 100px;
+	font-weight: 700;
+	font-size: 28px;
+	color: #FFFFFF;
+	padding-right: 29px;
+	z-index: 1000;
+	@include responsive(991) {
+		line-height: 60px;
+		padding-left: 62px;
+	}
+	@include responsive(767) {
+		font-size: 20px;
+	}
+
+	.icon {
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		width: 90px;
+		height: 90px;
+		background-color: #4CC9F9;
+		border-radius: 50px;
+		display: block;
+		background-image: url("../images/phone.png");
+		background-size: 45px 44px;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include responsive(991) {
+			width: 50px;
+			height: 50px;
+			background-size: 25px 24px;
+		}
+	}
+}
+
+.fab-wrap {
+	display: none;
+	@include responsive(991) {
+		display: block;
+	}
+
+	.fab-btn {
+		position: fixed;
+		z-index: 10000;
+		bottom: 20px;
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		line-height: 50px;
+		text-align: center;
+		background: linear-gradient(180deg, #22A46F 6.45%, #59B349 100%);
+		color: #fff;
+		@include flexbox();
+		@include align-items(center);
+		@include justify-content(center);
+
+		i {
+			font-size: 20px;
+		}
+
+		img {
+			max-width: 20px;
+			max-height: 20px;
+		}
+
+		&.fab-call {
+			right: 18px;
+		}
+
+		&.fab-zalo {
+			right: 10px;
+		}
+
+		&.fab-cashback {
+			left: 18px;
+
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+}
