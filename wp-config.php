@@ -16,11 +16,11 @@ define( 'WP_CACHE', true );
  */
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'qpuukjvaeh');
+define('DB_NAME', 'vencrfstzv');
 /** MySQL database username */
-define('DB_USER', 'qpuukjvaeh');
+define('DB_USER', 'vencrfstzv');
 /** MySQL database password */
-define('DB_PASSWORD', 'gS9PfCDttq');
+define('DB_PASSWORD', '4c24tRqcFE');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 /** Database Charset to use in creating database tables. */
@@ -45,7 +45,7 @@ require('wp-salt.php');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'table_';
+$table_prefix  = 'wp_';
 /**
  * WordPress Localized Language, defaults to English.
  *
